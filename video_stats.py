@@ -1,7 +1,8 @@
-import requests 
-import json 
+import os
+import requests
 
 CHANNEL_HANDLE = 'SantiagoMagnin'
+API_KEY = os.getenv("YOUTUBE_API_KEY") or os.getenv("API_KEY")
 
 def get_playlist_id():
 
